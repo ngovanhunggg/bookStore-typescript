@@ -1,0 +1,111 @@
+
+section.boxModal {
+    display: none;
+    width: 350px;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #ccc;
+  }
+  section .modal {
+   width: 90%;
+   margin: 20px auto;
+  }
+  
+  section .modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section .modal_header > h2 {
+    letter-spacing: normal;
+  }
+  section .modal .close {
+    /* float: right; */
+    color: #ccc;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  section .modal .close:hover,
+  section .modal .close:focus{
+    color: #ce1e1e;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* Book form -> modal body */
+  section .modal_body {
+    margin: 20px 0;
+  }
+  
+  section .form_group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  
+  .form_group label {
+    font-weight: 600;
+    padding: 6px 0;
+    font-size: 1.1em;
+  }
+  
+  button#create {
+    float: right;
+    margin-bottom: 20px;
+  }
+  
+  button#create:hover {
+    background: transparent;
+    color: blue;
+  }
+  
+  .form_message {
+    color: #f33a58;
+    padding: 4px 0;
+  }
+  
+  /* Delete boxModal */
+  section#deleteBookModal {
+    display: none;
+    position: relative;
+    text-align: center;
+  }
+  section#deleteBookModal .modal {
+    width: 80%;
+    margin: 20px auto;
+  }
+  section#deleteBookModal .modal .modal_header {
+    display: block;
+  }
+  
+  section#deleteBookModal .modal_header .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  section#deleteBookModal p {
+    margin: 40px 0 ;
+    color: #000;
+  }
+  
+  section#deleteBookModal .btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn #delete:hover {
+    color:#ce1e1e;
+    background: white;
+  }
+  .btn #cancel {
+    background: rgb(3, 152, 244);
+    color:#ffffff;
+    border : 1px solid rgb(81, 78, 86); ;
+  }
+  .btn #cancel:hover {
+    background: white;
+    color:rgb(3, 152, 244);
+  }

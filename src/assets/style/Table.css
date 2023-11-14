@@ -1,0 +1,31 @@
+table,th,td {
+
+    border: 2px solid #ccc;
+    text-align: unset;
+    padding: 10px;
+  }
+  
+  td::first-letter {
+    text-transform: uppercase;
+  }
+  
+  main table {
+    margin: 25px 0;
+    width: 100%;
+    border: 2px solid #ccc !important;
+    border-collapse: collapse;
+  }
+  main table button {
+    background: transparent;
+    color: red;
+    border-bottom:1px solid red;
+    padding:2px;
+    transition: 0.5s;
+  }
+  
+  main table button:hover {
+    font-weight: bold;
+  }
+  table tr {
+    height: 50px;
+  }
